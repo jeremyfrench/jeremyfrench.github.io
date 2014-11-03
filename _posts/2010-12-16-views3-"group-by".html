@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Views3 "Group by"
+tags:
+ - Drupal
 ---
 
-<div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Drupal 7 is a great improvement over 6, I can't wait for it to be released. However it's progress is eclipsing what could be an even greater improvement to the Drupal ecosystem and that is Views 3</p>
+<p>Drupal 7 is a great improvement over 6, I can't wait for it to be released. However it's progress is eclipsing what could be an even greater improvement to the Drupal ecosystem and that is Views 3</p>
 <p>Views is one of the most popular and most useful Drupal modules. Views 2 allows a huge amount of flexibility. Views 3 takes this to an almost unbelievable level.</p>
 <p>However the documentation is still catching up. One of the features which has been added is support for SQL group by clauses.</p>
 <p>The feature was added in "<a href="http://drupal.org/node/396380">Enhance Views to support proper GROUP BY queries</a>" if you read the thread all the way through and the code you can get an idea what is going on. Or you can read the rest of this post, which should explain it much more quickly.</p>
@@ -13,4 +15,3 @@ title: Views3 "Group by"
 <p>Group results together is a standard Group By clause, Others are also standard sql aggregate functions, obviously you should be careful not to use them for fields types which make no sense. Average on a string will throw an error.</p>
 <p>You can also use these grouping functions for sorting and for filters. Which uses the SQL HAVING clause.</p>
 <p>Once you have tried this a little I am sure you will get the hang of it. If you are used to the Views UI there is very little extra to learn.</p>
-</div></div></div><div class="field field-name-taxonomy-vocabulary-1 field-type-taxonomy-term-reference field-label-above"><div class="field-label">Tags:&nbsp;</div><div class="field-items"><div class="field-item even"><a href="/taxonomy/term/176" typeof="skos:Concept" property="rdfs:label skos:prefLabel">views drupal</a></div></div></div>
