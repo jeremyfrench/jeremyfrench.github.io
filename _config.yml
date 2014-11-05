@@ -3,7 +3,7 @@ title: Jeremy French Personal Site
 email: jeremy@jeremyfrench.co.uk
 description: > # this means to ignore newlines until "baseurl:"
   My Site, now on Jekyll
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/test/" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jfrenchTweet
 github_username:  jeremyfrench
