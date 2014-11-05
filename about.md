@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-TEst. Need to find this out.
+Test2. Need to find this out.
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
 
