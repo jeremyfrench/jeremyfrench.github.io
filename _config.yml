@@ -1,5 +1,5 @@
 # Site settings
-title: Jeremy French Personal Site
+name: Jeremy French Personal Site
 email: jeremy@jeremyfrench.co.uk
 description: > # this means to ignore newlines until "baseurl:"
   My Site, now on Jekyll
@@ -10,3 +10,27 @@ github_username:  jeremyfrench
 
 # Build settings
 markdown: kramdown
+
+
+# url is currently only used only for the RSS feed in feed.xml
+url: http://www.jeremyfrench.co.uk
+
+
+# Set this to your UA-# value, or '' to disable the block completely
+gaaccount: ''
+
+# Set this to your disqus shortname to enable comments. Note that the 'comments'
+# setting below must also be true. Individual posts can override 'comments' to
+# disable on a post-by-post basis
+disqus: ''
+comments: true
+
+permalink: /:year/:month/:title
+paginate: 3
+
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+
+exclude: ['README.md', 'LICENSE']
