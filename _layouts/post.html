@@ -11,9 +11,18 @@
                 <h1><a href="{{ site.baseurl}}{{ page.url }}">{{ page.date | date: "%b %-d, %Y" }} - {{ page.title }}</a></h1>
             {% if site.comments == true and page.comments == true and site.disqus != '' %}
                 <p class="author"><a href="#disqus_thread">Comments</a></p>
-            {% endif %}
+             {% endif %}
             <div class="post-content">
             {{ content }}
+            </div>
+            <div class="tags">
+                <h2>Tags</h2>
+                <ul class="tag_list">
+                {% for tag in page.tags %}
+                <a class="tag_list_link" href="/tags/{{ tag }}">{{ tag }}</a>
+                  {% endfor %}
+                 </ul>
+               </div>
             </div>
             {% if page.comments %}
             <div id="disqus_thread">
