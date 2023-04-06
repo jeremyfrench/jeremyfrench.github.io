@@ -3,9 +3,9 @@ title: Jeremy French
 name: Jeremy French
 email: jeremy@jeremyfrench.co.uk
 description: > # this means to ignore newlines until "baseurl:"
-  My Site, now on Jekyll
+  My Site, still on Jekyll
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "https://www.jeremyfrench.co.uk" # the base hostname & protocol for your site
 twitter_username: jfrenchTweet
 github_username:  jeremyfrench
 
@@ -24,7 +24,7 @@ gaaccount: 'UA-16084196-1'
 # setting below must also be true. Individual posts can override 'comments' to
 # disable on a post-by-post basis
 disqus: ''
-comments: true
+comments: false
 
 permalink: /:year/:month/:title
 paginate: 3
@@ -32,3 +32,4 @@ paginate: 3
 highlighter: pygments
 
 exclude: ['README.md', 'LICENSE']
+plugins: [jekyll-paginate]  
