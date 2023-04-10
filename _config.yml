@@ -11,7 +11,10 @@ github_username:  jeremyfrench
 
 # Build settings
 markdown: kramdown
-
+defaults:
+   home:
+     heading: "Jeremy French"
+     subheading: "Sporadically blogging since 2010"
 
 # url is currently only used only for the RSS feed in feed.xml
 url: http://www.jeremyfrench.co.uk
@@ -25,11 +28,14 @@ gaaccount: 'UA-16084196-1'
 # disable on a post-by-post basis
 disqus: ''
 comments: false
-
+theme: jekyll-theme-yat
 permalink: /:year/:month/:title
 paginate: 3
 
 highlighter: pygments
-
-exclude: ['README.md', 'LICENSE']
-plugins: [jekyll-paginate]  
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-spaceship

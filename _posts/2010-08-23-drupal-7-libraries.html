@@ -1,0 +1,22 @@
+---
+layout: post
+title: Drupal 7 libraries
+alias: /blog/drupal7_libraries
+tags:
+ - drupal
+ - google
+---
+
+<p>I have been working on Drupal 7 sites for a while now, mostly on research projects. I like a lot of the D7 features, and think it is a big step forward over Drupal 6, which wasn't bad to begin with. Most of my work on D7 won’t have modules which will go on Drupal.org, being 'closed' or at least too specific. So I was pleasantly surprised when I was working on a side project to see an opportunity to give a little code back. </p>
+
+<p>Drupal 7 allows modules to define libraries, this solves a few problems which have existed. It allows new libraries to be added and shared easily and defines dependencies between libraries. All in all it is a very nice little addition, and makes life a lot easier than working out which js and css need to be added to get  particular feature working.</p>
+
+<p>I was working on something which was using the <a href="http://code.google.com/apis/gdata/docs/js.html">google data<a/> and <a href="http://code.google.com/apis/charttools/index.html">visualisation</a> libraries. It was easy enough to add some code inline to include these libraries. But as you need to add a domain specific api key this would make the code a little nasty unless I put in a configuration page.</p>
+
+<p>When I got to that point, I realised that there may be several modules which would require the same key, so clicked that this could be a good use for libraries. So I created the <a href="http://drupal.org/project/googleapilibs">google api libraries module</a>.</p>
+
+<p>It is not rocket science and indeed it could be improved to make use of <a href="http://code.google.com/apis/ajax/documentation/#Dynamic">dynamic</a> or <a href="http://code.google.com/apis/ajax/documentation/#AutoLoading">auto loading</a>, but for the moment it serves a purpose.</p>
+
+<p>I think as Drupal 7 matures there will be many more modules which provide common libraries. The difficulty will be standardizing them. I would like to see some discussion about naming conventions for such libraries and a little checking that where a library is available a module uses it rather than including files directly.</p>
+
+<p>It may be possible to create a meta library, which module developers can use to see if a particular file is included, certainly the structure of  <a href="http://api.drupal.org/api/function/hook_library/7">hook_library()</a> lends itself to creating searchable data. Maybe something for the future...</p>

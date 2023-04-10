@@ -1,0 +1,31 @@
+---
+layout: post
+title: Drupal Batch API as simple as possible.
+alias: /blog/jeremyfrench/drupal_batch_api
+tags:
+ - drupal
+ - batch api
+---
+
+<p>Drupal's batch API is a handy tool for processing multiple items giving you feedback on how a process is going and avoiding page timeouts or memory issues.</p>
+
+<p>All that you need to be able to make use of the batch api is:</p>
+<ul>
+<li>A batch of items to process</li>
+<li>A function to wrap items in the batch</li>
+</ul>
+
+<p>So say you wanted to amend a subset of nodes, you could write a query to retrieve the NIDs, create a function to do your amendment and use the batch api.</p>
+
+<p>There is only one parameter you need to know for the batch api array and that is operations. </p>
+
+<p>For the nodes you want to amend that would be something like:</p>
+<div class="codeblock"><code>&lt;?php<br />$batch[&#039;operations&#039;] = array(<br />&nbsp; array(&#039;mymodule_ammend_node&#039;,1),<br />&nbsp; array(&#039;mymodule_ammend_node&#039;,2),<br />&nbsp; array(&#039;mymodule_ammend_node&#039;,3),<br />);</code></div>
+
+<p>Of course you are more likely to create operations in a loop rather than hard coding</p>
+<div class="codeblock"><code>&lt;?php<br />foreach ($nid_list as $nid) {<br />&nbsp; $batch[&#039;operations&#039;][] = array(&#039;mymodule_ammend_node&#039;,$nid);<br />}</code></div>
+
+<p>Once you have your operations array created running a batch is very simple, this is all you need:</p>
+<div class="codeblock"><code>&lt;?php<br />batch_set($batch); //See code above for batch array creation<br />batch_process();</code></div>
+
+<p>There are a lot of other things that you can do with the batch API. But many times this simple case is all you need.</p>

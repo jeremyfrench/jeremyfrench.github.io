@@ -1,0 +1,30 @@
+---
+layout: post
+title: RIP XHTML2
+alias: /blog/rip-xhtml2
+tags: ['w3c', 'html5']
+---
+<p>Over the weekend I learned that the XHTML2 working group was being disbanded. I am sure that it will not be mourned by many, but personally I think it is a big step in the wrong direction for the web.</p>
+<!--break-->
+<h2>A little abridged and possibly incorrect history here. </h2>
+
+<p>HTML went through a number of revisions in the late nineties. HTML40.1 was publisehd in 1999, then it pretty much sat there and stagnated. So since the original .com boom, there hasn't been an update in the basic language that nearly all web pages are written in. Most of the fancy goodness that you see today comes from <a href="http://www.w3.org/Style/CSS/">CSS</a>and <a href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a>, Which have had many updates in the last nine years.</p>
+
+<p><a href="http://www.w3.org/TR/xhtml1/">XHTML</a> was simply an <a href="http://www.w3.org/XML/">XML</a> version of HTML4, it is more strict than HTML, but due to IE not linking rendering XML files as web pages, It hasn't ever taken off. <a href="http://www.w3.org/TR/xhtml2/">XHTML2</a> was meant to be the future of the web. It had been in progress for a long time, and was a major refit of the language and had many great technical advantages. The other thing was that it was properly extensible, so users wouldn’t have to wait for a whole new generation of (X)?HTML to come along before getting nice new features.</p>
+
+<p>Unfortunately it was hard, and it wasn't back compatible. A lot of people got impatient and a <a href="http://www.whatwg.org/">group of upstarts</a> came up with the Idea of <a href="http://dev.w3.org/html5/spec/Overview.html">HTML5</a>, which was a lot of bells and whistles on top of HTML4. When this was first announced it was not meant to be a replacement for XHTML but an interim step. To get some features out the door fast while XHTML2 was being finalised (as of writing HTML5 is still not ready).</p>
+
+<h2>What now?</h2>
+
+<p>I continue to think that HTML5 is focused on the very short term. The form improvements could be handled much better by XFORMS. The new elements could be added in a separate namespace. I have not seen a convincing argument yet that HTML5 is anything other than a few gimmicks. I am sure that amazing things will be done with the gimmicks but as a technical step forward it is minor, mostly it is just standardising things that people are doing already. Not that this is a bad thing, in itself. But the loss of a modular extendable HTML is a heavy price to pay.</p>
+
+<p>XHTML2 took the approach that a lot of the specific stuff was not needed. Keep a few general tags, and make things extensible. HTML5 goes the other way and adds a whole load of very specific tags. HTML5 has a &lt;nav,&gt; tag, XHTML2 had an attribute @role which could be applied to any element. To me the second approach seems much better, adding a new and unknown value to role at least gives the browser a chance to work out what the element is and know that it is dealing with something with a role that it doesn’t know about.</p>
+
+
+<h2>Looking forward I hope for two things.</h2>
+
+<p>One is that this doesn’t kill off <a href="http://www.w3.org/MarkUp/Forms/specs/XForms1.1/index-all-20090604.html">Xforms</a>. Xforms is one of the most promising standards from the W3C. I think that anyone who has written more than the most trivial HTML form could spend a day with XForms and realise how great it could be. I'll blog about it some other time. </p>
+
+<p>The second is that this short termism is short lived. There will always be someone who wants a new tag to do something cool, but adding tags will only get you so far. The more tags there are in a spec the harder it is to change it. I would have though that people would have learned a lesson from a decade (nearly) of inaction on HTML.</p>
+
+<p>It will be interesting to see what happens after HTML5 is finalised.</p>

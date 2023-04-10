@@ -1,0 +1,15 @@
+---
+layout: post
+title: Notes on creating a mobile site with Drupal
+alias: /node/815
+tags: ['drupal', 'mobile']
+---
+<p>Some notes after creating a basic mobile tool using Drupal. Not exhaustive research but could be handy to someone trying to do the same.</p>
+<p>Created a new theme got rid of all regions bar $content.</p>
+<p>Also as we didn’t need them for the app, commented out tabs.</p>
+<p>Even if you keep all content in a page small it looks like webkit will still zoom out by default. <code>&amp;lt;meta name = "viewport" content = "initial-scale = 1.0"&amp;gt;</code> sets the zoom level to 1.</p>
+<p>However even with the meta tag above webkit will still zoom out if there are widths which push the content above the width of the screen.</p>
+<p>So I had to make sure there were no CSS widths specified. Percentages seem to work well. If you are worried about how things will look on a full size screen you can use <code>max-width</code> (even though this won’t help those on IE6).</p>
+<p>Even after that some form items end up being created too small so I had to do a <code>hook_form_alter</code> and make sure size was 20 for all textarea and password fields. </p>
+<p>I didn’t research too much but it looks like the android webkit struggles with long class names, things like <code>div#block-formblock-node_entry</code> just wouldn’t match.</p>
+<p><a href="http://www.quirksmode.org/m/css.html">Quriksmode mobile browser CSS tests is also a handy find</a></p>

@@ -1,0 +1,38 @@
+---
+layout: post
+title: Land of lost clicks.
+alias: /node/6195
+tags:
+ - SEO
+ - performance
+---
+
+<p>Google tracks clicks from a search page. It does this with a little redirect so any time you click a result from a search page it knows what is clicked on. Because it uses a http redirect you know that the stats for these reported on webmaster tools and analytics are pretty reliable. (even if they are rounded up and down)</p>
+
+<p>If you have google analytics you can also track the number of requests you get from google for a given search term. This uses the google analytics javascript which will normally fire after your page has loaded.</p>
+
+<p>Due to the nature of the web these numbers will never match up entirely, but if you are seeing a big difference between the reported clicks from google and the reported visits on your site then you have an idea of the proportion of users who give up before the page has finished loading * This is incredibly bad for a number important reasons.</p>
+
+<ol>
+<li>You are throwing away money, visitors from search are a source of income for many companies. If people don't load the page you have lost a potential customer.</li>
+<li>Google uses such stats to rank search results, it is likely that a user has clicked back and found another link, if they stay on that link google will think it is higher quality than your site.</li>
+<li>You brand is being tarnished before you have even had a chance to show a logo. Pretty pictures and fonts, good copy and even a brilliant product are not evaluated because your site didn't load. People may still remember the name, and associate it with a slow bloated website.</li>
+</ol>
+
+<h2>How to check if this is happening to you?</h2>
+
+<ol>
+<li>Open google analytics for your site choose a suitable date range leave the last week off as the google stats are not always right up to date.</li>
+<li>Open a second tab with the same date range. </li>
+<li>In one tab open "Traffic sources", "Search Engine optimisation", "queries"</li>
+<li>In the other tab look for "Traffic sources", "search", "organic"</li>
+<li>if you look at a "query" in one tab the number of "clicks" should be similar to the "visits" from a the same keyword.</li>
+</ol>
+
+<p>If your number of "visits" is considerably lower than the number of "clicks" then you are loosing people in this manner.</p>
+
+<p>caveat: This is based on my understanding and experience with google tools, I do not work for google or have direct knowledge of how tools work under the hood or how reports are generated. There will always be some differences in the number, but if you are constantly getting much lower visits than clicks something needs looking at. Most likely the speed your pages load at and the page weight.</p>
+
+
+<p><em>* or for who javascript is not working on the site.</em></p>
+
