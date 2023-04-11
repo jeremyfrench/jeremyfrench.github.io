@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Hiatus, what hiatus?
-alias: /blog/what-hiatus
-tags: ['personal']
+tags: 
+ - personal
 ---
 You make a nice build sytem so you can git push to your Rasberry Pi and it will publish to your website. You then kill the Pi by trying to compile the Rust compiler on it and put rebuilding the website onto your list. Life happens, tecnology moves on and teh site sits there doing nothing for an age.
 

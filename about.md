@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: default
 title: About
-permalink: /about/
+permalink: /about.html
 ---
 
 Test2. Need to find this out.
