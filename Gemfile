@@ -10,4 +10,5 @@ gem "jekyll-paginate"
 gem "jekyll-responsive-image"
 gem "jekyll-theme-yat"
 gem "jekyll-tidy"
+gem "webrick"
 
