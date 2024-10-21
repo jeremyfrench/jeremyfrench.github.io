@@ -21,7 +21,7 @@ This is a page where I note the things I have set up on my laptop so that I can 
 ## Reading
  * Folio e reader
 
-Espeek-ng trying to get set up through speech-dispatcher so that I can get a better text to speech experiances.
+Espeek-ng trying to get set up through speech-dispatcher so that I can get a better text to speech experiences.
 
 ## Website
 This is done with bundler also ruby-dev
@@ -37,6 +37,19 @@ Installing ruby bundler seems to break things
 `sudo gem instll bundler` seems to work better.
 
 
-## How tos 
+## How to...
 ### correct spellings in Neovim
+
+`:set spell spelllang=en_gb`
+
+This will turn on spelling and the locale
+
+(This guide is good)[https://neovim.io/doc/user/spell.html]
+
+`[s` and `]s` to search.
+
+`z=` to list possible words
+
+`zg` adds a word to the word list.
+
 
