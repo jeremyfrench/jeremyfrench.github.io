@@ -2,8 +2,13 @@
 layout: default
 ---
 <h1>Jeremy French</h1>
-<div class="aside">Infrequently blogging since 2010</div>
-
+<h2>About me</h2>
+<dl>
+<dt>Age</dt><dd>Middle</dd>
+<dt>Occupation</dt><dd>Suggesting that singing rocks, and more recently people, take a paticular course of action</dd>  
+<dt>Location</dt><dd>The compost heap of England</dd>
+<dt>Socials</dt><dd>Lots of places but most active on <a rel="me" href="https://cupoftea.social/@jfrench">Mastodon</a></dd>
+</dl>
 <h2><a href="{{ site.baseurl}}blog">Infequent blog posts</a></h2>
 {% for post in site.posts limit:4  %}
 <div class="postexcerpt">
@@ -13,5 +18,4 @@ layout: default
     </div>
 </div>
 {% endfor %}
-
-<a rel="me" href="https://cupoftea.social/@jfrench">Mastodon</a>
+<div class="asside">No cookies here.</div>

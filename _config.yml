@@ -3,17 +3,18 @@ title: Jeremy French
 name: Jeremy French
 email: jeremy@jeremyfrench.co.uk
 description: > # this means to ignore newlines until "baseurl:"
-  My Site, still on Jekyll
+  My Site, still on Jekyll, now powered by github pages
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.jeremyfrench.co.uk" # the base hostname & protocol for your site
 github_username:  jeremyfrench
+author: Jeremy French
 
 # Build settings
 markdown: kramdown
 defaults:
    home:
      heading: "Jeremy French"
-     subheading: "Sporadically blogging since 2010"
+     subheading: "Online since the 90s"
 
 # url is currently only used only for the RSS feed in feed.xml
 url: http://www.jeremyfrench.co.uk
