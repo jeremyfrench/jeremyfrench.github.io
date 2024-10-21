@@ -20,7 +20,7 @@ url: http://www.jeremyfrench.co.uk
 
 
 # Set this to your UA-# value, or '' to disable the block completely
-gaaccount: 'UA-16084196-1'
+gaaccount: 
 
 # Set this to your disqus shortname to enable comments. Note that the 'comments'
 # setting below must also be true. Individual posts can override 'comments' to
@@ -29,6 +29,8 @@ disqus: ''
 comments: false
 permalink: /:year/:month/:title:output_ext
 paginate: 3
+paginate_path: "/blog/page:num/"
+
 remote_theme: pages-themes/hacker@v0.2.0
 
 
@@ -37,7 +39,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
-  - jekyll-spaceship
   - jekyll-remote-theme
 
 jekyll_tidy:

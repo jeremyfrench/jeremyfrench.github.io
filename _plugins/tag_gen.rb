@@ -16,7 +16,7 @@ module Jekyll
   class TagGenerator < Generator
     safe true
     def generate(site)
-      if site.layouts.key? 'tag_index'
+      if site.layouts.key? 'default'
         dir = 'tags'
         site.tags.keys.each do |tag|
           write_tag_index(site, File.join(dir, tag), tag)

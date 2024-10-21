@@ -1,0 +1,11 @@
+---
+---
+
+@import "{{ site.theme }}";
+.postexcerpt {
+    .content {
+      p::after {
+        content: '...' 
+      }
+    }
+}
