@@ -3,7 +3,28 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC
+/ElEQVRYhbXWTWhUZxQG4MchhBJEioRQRMIgRUIoEmwQCYNIKOKitEFEpYQgUkLJogVxUcSNiIiI
+C3ElXYi4KKWIFLHaRXEhIiqtSBGRImkaJEhxEUpBaWlcnG+YyXjv5M54feEu7vdzznf+3nNWKQcD
+2IxRfIgPsBe/liS/LXqxgKX0/YMdb1NhD95rWRvB8/SA3zP2S8MwHgqLv2xaH0yK6154iHfLVr4b
+8/gE/XiCcazHLF7iAc5jGn1lKj+K37CxaW1zetBI+nrLVFjHGmHlGVzM2J/CfSVbW8cmPMYz4fYb
+OJRx7iy+KVv5hHDvTlHT8xgTibaz5ez7IilLw+dJUXO8J/AItfSYobS+HXP4rAs9vcLLyzAlSiir
+jo/gmqiGRzgsKmG0oMIBYdw53BNVc7n5wJgop/U5Air4HqeS8muiHItiGIsaXPGdIDWwWlhTW0FI
+Df8K4ukGNWH5En7B2vrGcVFq7TAp4v0mPH9SwwNL+JmgzAXt3XlYsFy1A2Vf428R83dwUBhwBcdE
+aQ/AF9rX8UHc0Rm3T4hk7k8PuI11eYevyHfrVpEbnSbbvOVlPC0SfGvWhQVBuVm46XXiaYdewZ67
+M/bGRAgmWzee5Qird7lO0C+S+Y5sLqnir+aFCl7kCBvEHx0o34enIlkv4JbXme4r/Nh68XmOwHUi
+lpUCyuutuSbq+5QI3Tw+Tmcm5XTOOflJ9pOg53bYIEI1nv77cAk/CJp+jNPpMdUsAd9iV47wjeni
+lpz9YVEle1rWKzghLB5JjxmXg32C4/Mwlh4xozH19ImZ8KmGi7Mwle7mcoAkdE64Mg9V0bkWhUsX
+heeq7QRjv8iJFce1GS2tMQdrRFiKjGDbhGGFGldFkM50kcMFsEm4vuisgIjTrGgSb4LRpPyjbi4P
+iaye6VJ5Pem2dXkf4YkbuKox+62EIdHUbmufzIVRwQHhjavCsg0arNgjpuH9YjSbFfNeEdZchlUr
+7PcISv1UkNFgUvI//sRdQTLX8V+nyuEVeD+iXvUFppkAAAAASUVORK5CYII=">
+    <style type="text/css">
+      {% capture include_to_scssify %}
+        {% include style.scss %}
+      {% endcapture %}
+      {{ include_to_scssify | scssify | strip_newlines }}
+    </style>
     {% include head-custom.html %}
 
 {% seo %}
