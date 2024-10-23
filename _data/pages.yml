@@ -1,0 +1,13 @@
+pages:
+
+- title: Home
+  url: /  
+
+- title: Blog
+  url: /blog  
+
+- title: Tooling
+  url: /pages/setup.html
+
+- title: Hotkeys
+  url: /pages/hotkeys.html

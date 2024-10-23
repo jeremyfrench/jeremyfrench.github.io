@@ -8,18 +8,19 @@ This is a page where I note the things I have set up on my laptop so that I can 
 
 ## Tooling
 
-* kitty 
-* Neovim
+* kitty - Terminal
+* Neovim - editor
 * Lazyvim starter
 * lazygit
 * fish (command prompt)
 * Opendyslexic nerd font
 * vit (task manager)
-
+* lynx - browser in terminal
 
 
 ## Reading
  * Folio e reader
+
 
 Espeek-ng trying to get set up through speech-dispatcher so that I can get a better text to speech experiences.
 
@@ -43,13 +44,5 @@ Installing ruby bundler seems to break things
 `:set spell spelllang=en_gb`
 
 This will turn on spelling and the locale
-
-(This guide is good)[https://neovim.io/doc/user/spell.html]
-
-`[s` and `]s` to search.
-
-`z=` to list possible words
-
-`zg` adds a word to the word list.
 
 
