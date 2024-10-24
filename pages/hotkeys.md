@@ -38,6 +38,8 @@ To paste when inserting `Ctrl+R`` then `+`
 
 `P` to insert before the cursor. 
 
+`"` to open a named register `"xyy` save line to register x `"xp` to paste it.
+
 ## Spell check
 [This guide is good](https://neovim.io/doc/user/spell.html)
 
@@ -53,8 +55,10 @@ To paste when inserting `Ctrl+R`` then `+`
 
 Commands work in visual mode, `w` to select word for example
 
+
 `o` to go to the other end of the selected area.
 
 `V` to go into a line wise visual mode.
 
+`Control-v` for block visual mode.
  
