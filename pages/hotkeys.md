@@ -38,6 +38,21 @@ Space Space is similar to Shift Shift in phpstorm
 
 Press `esc` if you need to enter and a snippet is selected
 
+` /` does whole project grep!
+
+`ctrl+z` suspend and `fg` to return (look into fg and bg)
+
+# Picker
+
+type for fuzzy search
+
+`esc` for normal mode then can navigate with hjkl 
+
+`s` to allow fast picking
+
+`cntrl` dufb to scroll the preview window
+
+
 
 # Clipboard
 
@@ -55,6 +70,8 @@ Capital register name will append to register
 
 ## Spell check
 [This guide is good](https://neovim.io/doc/user/spell.html)
+
+` us` to turn on spellings.
 
 `[s` and `]s` to search.
 
@@ -95,14 +112,55 @@ windows = splits
 
 `ctrl+` nav keys hjkl to move between them
 
-`ctrl+w` also fast to windo menu
+`ctrl+w` also fast to window menu
 
 `ctrl+w q` to quit window.
 
 Tabs work differently, bunch other things together.
 
+## Marks
+
+`m` then letter to bookmark (capital letters are global)
+`'` then letter to go to bookmark
+
+`''` to go back one
+
 
 ## Code folding
+
+`zc` close fold
+
+`zo` open fold
+
+## Code assistance.
+
+ `gd` go to definition (not tabs)
+
+`gr` go to reference list.
+
+ go back `ctrl+i` forward again  `ctrl+o`
+
+` ss` Search Symbols (in file)
+
+` cs` to open tree view for current file
+
+ ` xx` to open the browser then `[q` and `]q` work for browsing issues.
+
+ `crl+j` to go to issue browser window. Enter to jump to issue
+
+ ` ca` open up fixes window.
+
+ `K` for Kontext help.
+
+ `gc` for commenting. works with commands `gc5` then enter for five lines `gc%` to comment out matcing brac `S` gives smart search options.
+
+ `=` to fix indentation `=S` to choose area to fix.
+
+` gs` git status file picker.
+
+` gh` staging changes
+
+` gg` open lazygit if installed
 
 
 # Lynx
