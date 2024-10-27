@@ -3,7 +3,8 @@ layout: default
 ---
 <h1>Blog</h1>
 
-{% for post in paginator.posts %}
+<h2>Recent posts</h2>
+{% for post in site.posts limit:3 %}
 <div class="article">
     <div class="well">
         <h2><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }}</a></h2>
@@ -13,17 +14,18 @@ layout: default
     </div>
 </div>
 {% endfor %}
+<h2>Archive</h2>
+{%  assign year = 0 %}
+{% for post in site.posts offset:4 %}
+   {% assign postYear = post.date | date: "%Y" %}
+   {%if year != postYear %}
+      {%if year != 0 %}</ul>{% endif %}
+   {% assign year = postYear %}
+   <h3>{{ year }}</h3>
+     <ul>
+   {% endif %}  
+        <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%-d %b" }} - {{ post.title }}</a></li>
+{% endfor %}
+  </ul>
 
-<div class="pagination">
-  {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-        <a class="btn btn-default" href="{{ site.baseurl}}/blog" class="previous">Newer</a>
-      {% else %}
-        <a class="btn btn-default" href="{{ site.baseurl}}/blog/page{{ paginator.previous_page }}" class="previous">Newer</a>
-      {% endif %}
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a class="btn btn-default" href="{{ site.baseurl}}/blog/page{{ paginator.next_page }}" class="next">Older</a>
-  {% endif %}
-</div>
+

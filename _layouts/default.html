@@ -40,13 +40,16 @@ iaye6VJ5Pem2dXkf4YkbuKox+62EIdHUbmufzIVRwQHhjavCsg0arNgjpuH9YjSbFfNeEdZchlUr
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
         <nav id="menu">
-<ul>                                                                                                                                                   
-   {% for item in site.data.pages.pages %}                                                                                                         
-      <li><a href="{{ item.url }}"
-      {% if page.url == item.url %}class="active" {% endif %} 
-            >{{ item.title }}</a></li>                                                                                           
-   {% endfor %}                                                                                                                                        
-</ul>   
+              <ul>                                                                                                                                                   
+                  {% for item in site.data.pages.pages %}                                                                                                         
+            <li {% if page.url == item.url %}class="active"{% endif %}>
+                    {% if page.url == item.url %}
+                      {{ item.title }} 
+                    {% else %}
+                      <a href="{{ item.url }}" >{{ item.title }}</a></li>                                                                                           
+                    {% endif %}
+                  {% endfor %}                                                                                                                                        
+              </ul>
         </nav>
       </div>
     </header>
