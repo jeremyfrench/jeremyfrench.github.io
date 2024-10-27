@@ -39,7 +39,7 @@ iaye6VJ5Pem2dXkf4YkbuKox+62EIdHUbmufzIVRwQHhjavCsg0arNgjpuH9YjSbFfNeEdZchlUr
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
-        <section id="menu">
+        <nav id="menu">
 <ul>                                                                                                                                                   
    {% for item in site.data.pages.pages %}                                                                                                         
       <li><a href="{{ item.url }}"
@@ -47,14 +47,14 @@ iaye6VJ5Pem2dXkf4YkbuKox+62EIdHUbmufzIVRwQHhjavCsg0arNgjpuH9YjSbFfNeEdZchlUr
             >{{ item.title }}</a></li>                                                                                           
    {% endfor %}                                                                                                                                        
 </ul>   
-        </section>
+        </nav>
       </div>
     </header>
 
     <div class="container">
-      <section id="main_content">
+      <main id="main_content">
         {{ content }}
-      </section>
+      </main>
     </div>
   </body>
 </html>
