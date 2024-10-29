@@ -106,6 +106,8 @@ also `:bprev` and `:bnext`
 
 ` b` gives a buffer 'sub menu' with options.
 
+` bd` close buffer
+
 windows = splits
 
 ` w` to show sub menu
