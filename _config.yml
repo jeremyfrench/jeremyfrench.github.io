@@ -7,14 +7,31 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.jeremyfrench.co.uk" # the base hostname & protocol for your site
 github_username:  jeremyfrench
-author: Jeremy French
+author: 
+  picture: /assets/images/me.png
+  name: Jeremy French
+  url: https://www.jeremyfrench.co.uk
+
 
 # Build settings
 markdown: kramdown
 defaults:
-   home:
+  - 
+   scope:
+     path: "" 
+   values:   
      heading: "Jeremy French"
      subheading: "Online since the 90s"
+  -
+    scope:
+      type: "posts"
+    values:
+      image:
+        path: /assets/images/me.png
+        height: 442
+        width: 442
+        alt: J French in green
+
 
 # url is currently only used only for the RSS feed in feed.xml
 url: http://www.jeremyfrench.co.uk

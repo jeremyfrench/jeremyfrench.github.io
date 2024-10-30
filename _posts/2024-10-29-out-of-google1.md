@@ -1,6 +1,11 @@
 ---
 layout: post
 title: First step on the long road out of Google
+image:
+  path: /assets/images/g.png
+  height: 500
+  width: 491
+  alt: Rusty G
 tags:
  - degoogle 
 ---
