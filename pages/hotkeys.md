@@ -18,7 +18,13 @@ NB: these are the bits that I am learning on top of what I know so may not be ve
 * Previous tab `ctrl+shift+left`
 * Set tab title `ctrl+shift+alt+t`
 
-Windows don't worry about yet
+Windows:
+
+* New window `ctrl+shift+enter`
+* Close window `ctrl+shift+w`
+* Next window `ctrl+shift+]`
+* Previous window `ctrl+shift+[`
+* change layout `ctrl+shift+l`
 
 * Browse scrollback in less `ctrl+shift+h`
 * Browse last cmd output `ctrl+shift+g`
