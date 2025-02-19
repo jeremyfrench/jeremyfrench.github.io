@@ -170,6 +170,7 @@ Tabs work differently, bunch other things together.
 
 ` gg` open lazygit if installed
 
+` uf` disable auto formatting. (UI toggles are under ` u`)
 
 # Lynx
 
